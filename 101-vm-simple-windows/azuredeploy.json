@@ -54,11 +54,11 @@
   "variables": {
     "storageAccountName": "[concat(uniquestring(resourceGroup().id), 'sawinvm')]",
     "nicName": "myVMNic",
-    "addressPrefix": "10.0.0.0/16",
+    "addressPrefix": "192.168.0.0/16",
     "subnetName": "Subnet",
-    "subnetPrefix": "10.0.0.0/24",
+    "subnetPrefix": "192.168.0.0/24",
     "publicIPAddressName": "myPublicIP",
-    "vmName": "SimpleWinVM",
+    "vmName": "VM100",
     "virtualNetworkName": "MyVNET",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
     "networkSecurityGroupName": "default-NSG"
